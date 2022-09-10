@@ -3,6 +3,7 @@ body {
     text-align: center;
     margin: 0;
     color: white;
+    background-color: #473757;
 }
 
 .welcome {
@@ -43,4 +44,11 @@ font-size: 15px;
 button:hover {
     background: #3C2553; 
  }
+
+ .image {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
 
