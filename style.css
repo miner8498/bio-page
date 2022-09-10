@@ -12,7 +12,7 @@ padding-bottom: 0;
 
 }
 
-test {
+.test {
     vertical-align: middle;
     cursor: pointer;
     text-align: center;
@@ -24,8 +24,7 @@ background-color: #3C2553;
 }
 
 .desc {
-margin-bottom: 2pc;
-
+margin-bottom: 10px;
 }
 
 button {
@@ -42,5 +41,6 @@ font-size: 15px;
 }
 
 button:hover {
-   background: #3C2553; 
-}
+    background: #3C2553; 
+ }
+
