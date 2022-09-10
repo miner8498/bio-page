@@ -4,6 +4,8 @@ body {
     margin: 0;
     color: white;
     background-color: #473757;
+    min-height: 100vh;
+
 }
 
 .welcome {

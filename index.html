@@ -7,10 +7,8 @@
     <title>Amin's bio</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-
-<body onclick="new Audio('https://frcat.xyz/assets/audio/click.mp3').play();">
- 
+<body>
+    <audio id="player" loop=""><source src="https://allahleaks.com/audio/halal.mp3" type="audio/mp3"></audio>
 <div class="PageTitle">
     <p class="welcome"> Welcome To My Bio Page!!</p>
 </div>
@@ -26,5 +24,36 @@
     <button class="test" >Useless  Button</button>
 
 </desc-btn>
+<script>
+    document.addEventListener('click', musicPlay);
+window.onload = function() {
+    blink();
+    var promise = document.getElementById('player').play();
+    if (promise !== undefined) {
+        promise.then(_ => {
+          
+        }).catch(error => {
+            document.getElementById('autoplay').style.display = 'inline'
+        });
+      }
+}
+function musicPlay() {
+    document.getElementById('player').play();
+    document.getElementById('autoplay').style.opacity = 0;
+    document.removeEventListener('click', musicPlay);
+}
+
+function blink() {
+    var f = document.getElementById('flashing');
+    var isVisible = false;
+    setInterval(function() {
+        f.style.opacity = (isVisible ? 100 : 0);
+       isVisible = !isVisible;
+    }, 80);
+ }
+
+ 
+ 
+</script>
 </body>
 </html>
