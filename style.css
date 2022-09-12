@@ -12,11 +12,7 @@ body {
 font-size: 30px;
 padding-bottom: 0;
 color: white;
-
-
-
-
-
+font-weight: bold;
 }
 
 .test {
@@ -63,4 +59,13 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
+
+.image-h {
+    width: 30%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+}
 
